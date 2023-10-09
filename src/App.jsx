@@ -13,22 +13,12 @@ const Layout = () => {
     <>
       <Navbar />
       <Outlet />
-      {/* <Landing /> */}
       <Footer />
     </>
   );
 };
+
 const router = createBrowserRouter([
-  {
-    path: "/login",
-    element: <Login />,
-    // children: [
-    //   {
-    //     path: "/home",
-    //     element: <Layout />,
-    //   },
-    // ],
-  },
   {
     path: "/",
     element: <Layout />,
@@ -41,50 +31,20 @@ const router = createBrowserRouter([
         path: "/home",
         element: <Landing />,
       },
-      // {
-      //   path: "/home",
-      //   element: <Layout />,
-      // },
       {
         path: "/jobdescription/:job_id",
         element: <JobDescription />,
       },
+      {
+        path: "/",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
     ],
   },
-  {
-    path: "/login",
-    element: <Login />,
-    // children: [
-    //   {
-    //     path: "/home",
-    //     element: <Layout />,
-    //   },
-    // ],
-  },
-  // {
-  //   path: "/login",
-  //   element: (
-  //     <div>
-  //       <Login />
-  //     </div>
-  //   ),
-  // },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-  // {
-  //   path: "/application",
-  //   element: <Application />,
-  // },
-  // {
-  //   path: "/home",
-  //   element: <Layout />,
-  // },
-  // {
-  //   path: "/jobdescription",
-  //   element: <JobDescription />,
-  // },
 ]);
 
 function App() {
@@ -96,4 +56,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

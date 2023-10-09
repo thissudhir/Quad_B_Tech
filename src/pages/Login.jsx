@@ -11,14 +11,6 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const baseUrl = import.meta.env.VITE_REACT_APP_BASE_URL;
-  const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
-  const apiHost = import.meta.env.VITE_REACT_APP_API_HOST;
-
-  console.log("Base URL:", baseUrl);
-  console.log("API Key:", apiKey);
-  console.log("API Host:", apiHost);
-
   const emailRef = useRef();
   const passwordRef = useRef();
   const navigate = useNavigate();
@@ -63,7 +55,7 @@ const Login = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          height: "80vh",
+          height: "86.1vh",
         }}
       >
         <Link to={"/"}>

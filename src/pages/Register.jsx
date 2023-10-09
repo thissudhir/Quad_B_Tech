@@ -62,7 +62,7 @@ const Register = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          height: "80vh",
+          height: "86.1vh",
         }}
       >
         {/* <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -143,7 +143,7 @@ const Register = () => {
           <Grid container justifyContent="flex-end">
             <Grid item>
               Already have an account?{" "}
-              <Link to={"/login"} variant="body2">
+              <Link to={"/"} variant="body2">
                 Log in
               </Link>
             </Grid>

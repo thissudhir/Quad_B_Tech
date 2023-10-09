@@ -16,6 +16,7 @@ const fetchJobDetailsById = async (job_id) => {
 
 const JobDescription = ({ job_id }) => {
   const [jobDetails, setJobDetails] = useState(null);
+  console.log(`Job id is here: ${job_id}`);
 
   useEffect(() => {
     const fetchJobDetails = async () => {

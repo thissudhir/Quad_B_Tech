@@ -20,7 +20,6 @@ export const fetchJobListings = async (query, page = 1, numPages = 1) => {
       },
       ...defaultOptions,
     });
-
     return response.data;
   } catch (error) {
     console.error(error);
