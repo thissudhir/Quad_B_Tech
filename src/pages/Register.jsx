@@ -49,7 +49,7 @@ const Register = () => {
     localStorage.setItem("password", password);
     localStorage.setItem("login", email);
     alert("Account created successfully");
-    navigate("/login");
+    navigate("/");
   };
 
   return (
